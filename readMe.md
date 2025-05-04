@@ -63,6 +63,13 @@ A **Spinner** in Android is a UI widget that displays a dropdown list of items a
 5. **How do you handle user selection in a Spinner?**  
    Using `setOnItemSelectedListener()` and implementing its methods.
 
+6. **Why is id for textview for item important? How can we have custom layout for items**
+   ArrayAdapter looks for a TextView with this ID to call setText() internally. If it’s missing, the adapter throws IllegalStateException.
+   We can have seperate layout for item which has the textview is the root element and to provide id ofr it is mandatory
+
+
+
+
 ---
 
 ### 🟡 Intermediate-Level Questions
